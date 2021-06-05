@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css typing effect</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(86,111, 119);
+        color: white;
+    }
+
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .typing-text{
+        width: 10cm;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid;
+        font-family: nonospace;
+        font-size: 2em;
+    }
+
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+
+    }
+
+    @keyframes blink {
+        50%{
+            border-color: transparent;
+            
+        }
+    }
+</style>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="typing-text">
+            Hello, My name is Sajjad
+        </div>
+    </div>
+
+</body>
+</html>
